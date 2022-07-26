@@ -1,7 +1,6 @@
 
 package com.server2.server2.Dto;
 
-import java.sql.Blob;
 import javax.validation.constraints.NotBlank;
 
 
@@ -13,12 +12,12 @@ public class dtoPersona {
     @NotBlank
     private String bio;
     @NotBlank
-    private Blob img;
+    private String img;
 
     public dtoPersona() {
     }
 
-    public dtoPersona(String nombre, String apellido, String bio, Blob img) {
+    public dtoPersona(String nombre, String apellido, String bio, String img) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.bio = bio;
@@ -49,11 +48,11 @@ public class dtoPersona {
         this.bio = bio;
     }
 
-    public Blob getImg() {
+    public String getImg() {
         return img;
     }
 
-    public void setImg(Blob img) {
+    public void setImg(String img) {
         this.img = img;
     }
 

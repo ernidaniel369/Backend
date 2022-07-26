@@ -2,7 +2,6 @@
 package com.server2.server2.Entity;
 
 
-import java.sql.Blob;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -16,23 +15,23 @@ public class Persona {
     private String nombre;
     private String apellido;
     private String bio;
-    private Blob img;
+    private String img;
 
     public Persona() {
     }
 
-    public Persona(String nombre, String apellido, String bio, Blob img) {
+    public Persona(String nombre, String apellido, String bio, String img) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.bio = bio;
         this.img = img;
     }
 
-    public Blob getImg() {
+    public String getImg() {
         return img;
     }
 
-    public void setImg(Blob img) {
+    public void setImg(String img) {
         this.img = img;
     }
 
