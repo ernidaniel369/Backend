@@ -11,14 +11,25 @@ public class dtoProyecto {
     private String resumen;
     @NotBlank
     private String enlace;
+    @NotBlank
+    private String imagen;
 
     public dtoProyecto() {
     }
 
-    public dtoProyecto(String titulo, String resumen, String enlace) {
+    public dtoProyecto(String titulo, String resumen, String enlace, String imagen) {
         this.titulo = titulo;
         this.resumen = resumen;
         this.enlace = enlace;
+        this.imagen = imagen;
+    }
+
+    public String getImagen() {
+        return imagen;
+    }
+
+    public void setImagen(String imagen) {
+        this.imagen = imagen;
     }
 
     public String getTitulo() {
