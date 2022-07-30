@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/perlab")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://frontend-9539f.firebaseapp.com/")
 public class CPersona {
     @Autowired
     SPersona sPersona;

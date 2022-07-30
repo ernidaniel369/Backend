@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/edulab")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://frontend-9539f.firebaseapp.com/")
 public class CEducacion {
     @Autowired
     SEducacion sEducacion;
