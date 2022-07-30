@@ -13,15 +13,26 @@ public class dtoPersona {
     private String bio;
     @NotBlank
     private String img;
+    @NotBlank
+    private String banner;
 
     public dtoPersona() {
     }
 
-    public dtoPersona(String nombre, String apellido, String bio, String img) {
+    public dtoPersona(String nombre, String apellido, String bio, String img, String banner) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.bio = bio;
         this.img = img;
+        this.banner = banner;
+    }
+
+    public String getBanner() {
+        return banner;
+    }
+
+    public void setBanner(String banner) {
+        this.banner = banner;
     }
 
     public String getNombre() {

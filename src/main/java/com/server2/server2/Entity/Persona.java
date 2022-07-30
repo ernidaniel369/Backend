@@ -16,19 +16,29 @@ public class Persona {
     private String apellido;
     private String bio;
     private String img;
+    private String banner;
 
     public Persona() {
     }
 
-    public Persona(String nombre, String apellido, String bio, String img) {
+    public Persona(String nombre, String apellido, String bio, String img, String banner) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.bio = bio;
         this.img = img;
+        this.banner = banner;
     }
 
     public String getImg() {
         return img;
+    }
+
+    public String getbanner() {
+        return banner;
+    }
+
+    public void setBanner(String banner) {
+        this.banner = banner;
     }
 
     public void setImg(String img) {

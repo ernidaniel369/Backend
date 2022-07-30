@@ -51,7 +51,7 @@ public class CPersona {
         if(sPersona.existsByNombre(dtoper.getNombre()))
             return new ResponseEntity(new Mensaje("Esa experiencia existe"), HttpStatus.BAD_REQUEST);
         
-        Persona persona = new Persona(dtoper.getNombre(), dtoper.getApellido(), dtoper.getBio(), dtoper.getImg());
+        Persona persona = new Persona(dtoper.getNombre(), dtoper.getApellido(), dtoper.getBio(), dtoper.getImg(), dtoper.getBanner());
         sPersona.save(persona);
         
         return new ResponseEntity(new Mensaje("Experiencia agregada"), HttpStatus.OK);
@@ -74,6 +74,7 @@ public class CPersona {
         persona.setApellido((dtoper.getApellido()));
         persona.setBio(dtoper.getBio());
         persona.setImg(dtoper.getImg());
+        persona.setBanner(dtoper.getBanner());
         
         sPersona.save(persona);
         return new ResponseEntity(new Mensaje("Persona actualizada"), HttpStatus.OK);
